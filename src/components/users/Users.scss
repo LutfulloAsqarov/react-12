@@ -1,0 +1,47 @@
+.users {
+    padding: 50px;
+    &__cards {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    &__card {
+        width: calc(25% - 15px);
+        border: 1px solid grey;
+        border-radius: 10px;
+        overflow: hidden;
+        &__img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        &__info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            button {
+                padding: 5px 10px;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                color: #fff;
+                &:hover {
+                    opacity: 0.8;
+                }
+                &:first-child {
+                    background: green;
+                }
+                &:last-child {
+                    background: red;
+                }
+            }
+        }
+    }
+}

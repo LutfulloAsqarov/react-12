@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    &__card {
+        width: calc(25% - 15px);
+        img {
+            width: 100%;
+        }
+    }
+}
